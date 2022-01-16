@@ -1,13 +1,58 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background: floralwhite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.tab {
+    border: none 2px;
+    width: 40%;
+}
+
+.title {
+    text-align: center;
+    color: darksalmon;
+}
+
+.description {
+    margin-top: 8px;
+    text-align: center;
+    color: darkgrey;
+    font-style: italic;
+}
+
+.company {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRow {
+    display: flex;
+}
+
+.showResult {
+    display: flex;
+    max-width: 500px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.copyButton {
+    margin-left: 8px;
+}
+
+/*.user {*/
+/*  margin-bottom: 8px;*/
+/*  font-style: italic;*/
+/*  text-align: center;*/
+/*  font-size: x-large;*/
+/*  color: lightgrey;*/
+/*  font-family: "Lucida Console", serif;*/
+/*}*/

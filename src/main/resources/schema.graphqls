@@ -1,0 +1,8 @@
+type Query {
+  # Get original url by shortened url.
+  getOriginalUrl(shortenedUrl: String): String
+}
+
+type Mutation {
+  createShortenedUrl(originalUrl: String): String
+}
