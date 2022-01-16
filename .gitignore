@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/target
+/.idea
 /.pnp
 .pnp.js
 
