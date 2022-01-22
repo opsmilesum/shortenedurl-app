@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ShortenedRepository extends CrudRepository<ShortenedUrlDAO, String> {
-    ShortenedUrlDAO findByShortenedUrl(String shortenedUrl);
+  ShortenedUrlDAO findByShortenedUrl(String shortenedUrl);
 }

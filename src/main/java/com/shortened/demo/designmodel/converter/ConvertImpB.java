@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class ConvertImpB implements ConverterInterface {
 
-    @Override
-    public Instant convert(Instant initial, Map<String, Object> context) {
-        return initial.plusSeconds(200);
-    }
+  @Override
+  public Instant convert(Instant initial, Map<String, Object> context) {
+    return initial.plusSeconds(200);
+  }
 }

@@ -4,5 +4,5 @@ import java.time.Instant;
 import java.util.Map;
 
 public interface ConverterInterface {
-    Instant convert(Instant initial, Map<String, Object> context);
+  Instant convert(Instant initial, Map<String, Object> context);
 }

@@ -7,10 +7,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Query implements GraphQLQueryResolver {
-    @Autowired
-    private ShortenedService shortenedService;
+  @Autowired private ShortenedService shortenedService;
 
-    public String getOriginalUrl(String shortenedUrl) {
-        return shortenedService.queryOriginalUrl(shortenedUrl);
-    }
+  public String getOriginalUrl(String shortenedUrl) {
+    return shortenedService.queryOriginalUrl(shortenedUrl);
+  }
 }

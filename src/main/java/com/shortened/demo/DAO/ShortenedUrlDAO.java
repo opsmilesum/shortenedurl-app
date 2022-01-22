@@ -1,6 +1,9 @@
 package com.shortened.demo.DAO;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,15 +18,15 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ShortenedUrlDAO {
-    @Id
-    @Column(name = "shortened_url")
-    private String shortenedUrl;
+  @Id
+  @Column(name = "shortened_url")
+  private String shortenedUrl;
 
-    @Column(name = "original_url", nullable = false)
-    private String originalUrl;
+  @Column(name = "original_url", nullable = false)
+  private String originalUrl;
 
-    private String description;
-    private boolean disabled;
-    private Instant createdAt;
-    private long createdBy;
+  private String description;
+  private boolean disabled;
+  private Instant createdAt;
+  private long createdBy;
 }

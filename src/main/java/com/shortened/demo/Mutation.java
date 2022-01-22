@@ -7,10 +7,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Mutation implements GraphQLMutationResolver {
-    @Autowired
-    private ShortenedService shortenedService;
+  @Autowired private ShortenedService shortenedService;
 
-    public String createShortenedUrl(String originalUrl) {
-        return shortenedService.createShortenedUrl(originalUrl);
-    }
+  public String createShortenedUrl(String originalUrl) {
+    return shortenedService.createShortenedUrl(originalUrl);
+  }
 }
