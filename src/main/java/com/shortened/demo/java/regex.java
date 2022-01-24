@@ -14,6 +14,7 @@ public class regex {
     String patternString = "Booking Number: (?<bookingNumber>[A-Z0-9]+).*";
     Pattern pattern = Pattern.compile(patternString);
     Matcher matcher = pattern.matcher(source);
+
     Assertions.assertTrue(matcher.find());
     Assertions.assertEquals(matcher.groupCount(), 1);
     Assertions.assertEquals(matcher.group("bookingNumber"), "1000");

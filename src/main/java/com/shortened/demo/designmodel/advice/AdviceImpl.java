@@ -5,9 +5,7 @@ public class AdviceImpl {
 
   public static Student run() {
     return AdviceUtil.advice(
-        () -> {
-          return new Student();
-        },
+        () -> new Student(),
         new Advice<>() {
           @Override
           public void onEnter() {
